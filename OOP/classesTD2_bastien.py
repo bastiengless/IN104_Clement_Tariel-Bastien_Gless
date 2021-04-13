@@ -26,6 +26,7 @@ class Coleoptera(Insect):
 	def __init__(self,size,is_social,horn_size,weight):
 		self.horn_size = horn_size
 		self.weight = weight
+		self.is_social = False
 		super().__init__(size, is_social)
 
 	def fightForFemale(self):
