@@ -30,7 +30,7 @@ class Coleoptera(Insect):
 		super().__init__(size, is_social)
 
 	def fightForFemale(self):
-		print("With my"+str(self.horn_size)"mm horn, I will defeat all my opponents to get to the female")
+		print("With my"+str(self.horn_size)+"mm horn, I will defeat all my opponents to get to the female")
 
 	def flyClumsily(self):
 		print("I'm too heavy to fly correctly")
