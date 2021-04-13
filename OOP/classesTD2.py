@@ -15,7 +15,7 @@ class Rongeur(Mammifere):
 	def hiberner(self):
 		print("C'est parti pour un gros dodo ... Zzzz ...")
 
-	def courrir(self):
+	def courir(self):
 		print("une vitesse de "+str(self.vitesse)+" ca décoiffe !")
 
 class Cetace(Mammifere):
