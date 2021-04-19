@@ -1,5 +1,13 @@
 import unittest
 
+import sys
+sys.path.insert(1,'../OOP/')
+
+from classesTD2_bastien import Insect
+from classesTD2_bastien import Hymenoptera
+from classesTD2_bastien import Coleoptera
+
+
 class TestInsect(unittest.TestCase):
 	def testNbOfLegs(self):
 		insect = Insect(3,True)
@@ -18,7 +26,7 @@ class TestColeoptera(unittest.TestCase):
 		#coleoptera burn calories 
 		weight =30
 		coleoptera = Coleoptera(4,False,1,weight)
-		coleoptera.flyClumily()
+		coleoptera.flyClumsily()
 		self.assertTrue(coleoptera.weight<=weight)
 
 	def testSociabilityConstancy(self):
