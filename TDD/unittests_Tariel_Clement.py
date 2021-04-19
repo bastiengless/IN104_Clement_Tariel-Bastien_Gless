@@ -23,7 +23,7 @@ class TestColeoptera(unittest.TestCase):
 
 	def testSociabilityConstancy(self):
                 coleoptera = Coleoptera(4,False,1,30)
-                was_social = coleoptera.is_soc>
+                was_social = coleoptera.is_social
                 coleoptera.fightForFemale()
                 self.assertEqual(coleoptera.is_social,was_social)
                 
