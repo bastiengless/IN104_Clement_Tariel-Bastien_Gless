@@ -2,7 +2,7 @@
 
 class Mammifere:
 	def __init__(self,age,taille,poids):
-		self.age = age # en annees
+		self.age = abs(age) # en annees
 		self.taille = taille # en m
 		self.poids = poids # en kg
 
@@ -17,6 +17,8 @@ class Rongeur(Mammifere):
 
 	def courir(self):
 		print("une vitesse de "+str(self.vitesse)+" ca décoiffe !")
+		self.poids -= self.poids/10
+		self.poids = max(0, self.poids)
 
 class Cetace(Mammifere):
 	def __init__(self,age,taille,poids,tempsApnee,profondeurMaxToleree):
